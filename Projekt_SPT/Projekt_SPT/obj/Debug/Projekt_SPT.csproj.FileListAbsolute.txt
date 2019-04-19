@@ -1,0 +1,14 @@
+D:\CSharp\Projekt_SPT\Projekt_SPT\bin\Debug\Projekt_SPT.exe.config
+D:\CSharp\Projekt_SPT\Projekt_SPT\bin\Debug\Projekt_SPT.exe
+D:\CSharp\Projekt_SPT\Projekt_SPT\bin\Debug\Projekt_SPT.pdb
+D:\CSharp\Projekt_SPT\Projekt_SPT\obj\Debug\Projekt_SPT.csprojAssemblyReference.cache
+D:\CSharp\Projekt_SPT\Projekt_SPT\obj\Debug\Projekt_SPT.csproj.CoreCompileInputs.cache
+D:\CSharp\Projekt_SPT\Projekt_SPT\obj\Debug\Projekt_SPT.exe
+D:\CSharp\Projekt_SPT\Projekt_SPT\obj\Debug\Projekt_SPT.pdb
+C:\Users\hanze\Desktop\Projekt_SPT\Projekt_SPT\bin\Debug\Projekt_SPT.exe.config
+C:\Users\hanze\Desktop\Projekt_SPT\Projekt_SPT\bin\Debug\Projekt_SPT.exe
+C:\Users\hanze\Desktop\Projekt_SPT\Projekt_SPT\bin\Debug\Projekt_SPT.pdb
+C:\Users\hanze\Desktop\Projekt_SPT\Projekt_SPT\obj\Debug\Projekt_SPT.csprojAssemblyReference.cache
+C:\Users\hanze\Desktop\Projekt_SPT\Projekt_SPT\obj\Debug\Projekt_SPT.csproj.CoreCompileInputs.cache
+C:\Users\hanze\Desktop\Projekt_SPT\Projekt_SPT\obj\Debug\Projekt_SPT.exe
+C:\Users\hanze\Desktop\Projekt_SPT\Projekt_SPT\obj\Debug\Projekt_SPT.pdb
