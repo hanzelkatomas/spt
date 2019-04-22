@@ -75,7 +75,189 @@ namespace Projekt_SPT
                         {
                             Console.Write($"{prvek} ");
                         }
-                        break;                   
+                        break;
+
+                    case "16":
+
+                        double preVelikostPoleHex;
+                        int hodnotaHex = x;
+                        if (hodnotaHex != 0)
+                        {
+                            preVelikostPoleHex = Math.Floor(Math.Log(x, 16));
+                        }
+                        else
+                        {
+                            preVelikostPoleHex = 0;
+                        }
+                        int hexVelikostPole = (int)preVelikostPoleHex;
+                        Console.WriteLine();
+
+                        char[] charArrayHex = new char[hexVelikostPole + 1];
+                        // hexadecimalni
+                        for (int i = 0; i <= hexVelikostPole; i++)
+                        {
+                            if (i == hexVelikostPole)
+                            {
+                                if (hodnotaHex % 16 == 1)
+                                {
+                                    charArrayHex[i] = '1';
+                                }
+                                else if (hodnotaHex % 16 == 2)
+                                {
+                                    charArrayHex[i] = '2';
+                                }
+                                else if (hodnotaHex % 16 == 3)
+                                {
+                                    charArrayHex[i] = '3';
+                                }
+                                else if (hodnotaHex % 16 == 4)
+                                {
+                                    charArrayHex[i] = '4';
+                                }
+                                else if (hodnotaHex % 16 == 5)
+                                {
+                                    charArrayHex[i] = '5';
+                                }
+                                else if (hodnotaHex % 16 == 6)
+                                {
+                                    charArrayHex[i] = '6';
+                                }
+                                else if (hodnotaHex % 16 == 7)
+                                {
+                                    charArrayHex[i] = '7';
+                                }
+                                else if (hodnotaHex % 16 == 8)
+                                {
+                                    charArrayHex[i] = '8';
+                                }
+                                else if (hodnotaHex % 16 == 9)
+                                {
+                                    charArrayHex[i] = '9';
+                                }
+                                else if (hodnotaHex % 16 == 10)
+                                {
+                                    charArrayHex[i] = 'A';
+                                }
+                                else if (hodnotaHex % 16 == 11)
+                                {
+                                    charArrayHex[i] = 'B';
+                                }
+                                else if (hodnotaHex % 16 == 12)
+                                {
+                                    charArrayHex[i] = 'C';
+                                }
+                                else if (hodnotaHex % 16 == 13)
+                                {
+                                    charArrayHex[i] = 'D';
+                                }
+                                else if (hodnotaHex % 16 == 14)
+                                {
+                                    charArrayHex[i] = 'E';
+                                }
+                                else if (hodnotaHex % 16 == 15)
+                                {
+                                    charArrayHex[i] = 'F';
+                                }
+                                else
+                                {
+                                    charArrayHex[i] = '0';
+                                }
+                            }
+                            else
+                            {
+                                if (hodnotaHex % 16 == 1)
+                                {
+                                    charArrayHex[i] = '1';
+                                    hodnotaHex /= 16;
+                                }
+                                else if (hodnotaHex % 16 == 2)
+                                {
+                                    charArrayHex[i] = '2';
+                                    hodnotaHex /= 16;
+                                }
+                                else if (hodnotaHex % 16 == 3)
+                                {
+                                    charArrayHex[i] = '3';
+                                    hodnotaHex /= 16;
+                                }
+                                else if (hodnotaHex % 16 == 4)
+                                {
+                                    charArrayHex[i] = '4';
+                                    hodnotaHex /= 16;
+                                }
+                                else if (hodnotaHex % 16 == 5)
+                                {
+                                    charArrayHex[i] = '5';
+                                    hodnotaHex /= 16;
+                                }
+                                else if (hodnotaHex % 16 == 6)
+                                {
+                                    charArrayHex[i] = '6';
+                                    hodnotaHex /= 16;
+                                }
+                                else if (hodnotaHex % 16 == 7)
+                                {
+                                    charArrayHex[i] = '7';
+                                    hodnotaHex /= 16;
+                                }
+                                else if (hodnotaHex % 16 == 8)
+                                {
+                                    charArrayHex[i] = '8';
+                                    hodnotaHex /= 16;
+                                }
+                                else if (hodnotaHex % 16 == 9)
+                                {
+                                    charArrayHex[i] = '9';
+                                    hodnotaHex /= 16;
+                                }
+                                else if (hodnotaHex % 16 == 10)
+                                {
+                                    charArrayHex[i] = 'A';
+                                    hodnotaHex /= 16;
+                                }
+                                else if (hodnotaHex % 16 == 11)
+                                {
+                                    charArrayHex[i] = 'B';
+                                    hodnotaHex /= 16;
+                                }
+                                else if (hodnotaHex % 16 == 12)
+                                {
+                                    charArrayHex[i] = 'C';
+                                    hodnotaHex /= 16;
+                                }
+                                else if (hodnotaHex % 16 == 13)
+                                {
+                                    charArrayHex[i] = 'D';
+                                    hodnotaHex /= 16;
+                                }
+                                else if (hodnotaHex % 16 == 14)
+                                {
+                                    charArrayHex[i] = 'E';
+                                    hodnotaHex /= 16;
+                                }
+                                else if (hodnotaHex % 16 == 15)
+                                {
+                                    charArrayHex[i] = 'F';
+                                    hodnotaHex /= 16;
+                                }
+                                else
+                                {
+                                    charArrayHex[i] = '0';
+                                    hodnotaHex /= 16;
+                                }                                
+                            }                         
+                        }
+
+                        Array.Reverse(charArrayHex);
+
+                        Console.WriteLine($"Cislo {x} v hexadecimalni soustave: ");
+                        foreach (char prvek in charArrayHex)
+                        {
+                            Console.Write($"{prvek}");
+                        }
+                        break;
+
+                    
 
 
                     default:
