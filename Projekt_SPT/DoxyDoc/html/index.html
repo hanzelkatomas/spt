@@ -1,0 +1,105 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.15"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Projekt SPT - převodník čísel: Dokumentace projektu - převodník čísel</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Projekt SPT - převodník čísel
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generováno programem Doxygen 1.8.15 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Hledat');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Hledat');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="PageDoc"><div class="header">
+  <div class="headertitle">
+<div class="title">Dokumentace projektu - převodník čísel </div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><h1><a class="anchor" id="main"></a>
+Popis programu</h1>
+<p>Program má sloužit k převodu čísel v dekadickém formátu na čísla v dvojkové, osmičkové a šestnáckové soustavě</p><ul>
+<li>Uživatel zadá číslo v dekadickém formátu</li>
+<li>Vybere danou soustavu, do které chce číslo převést</li>
+<li>V případě potřeby může pokračovat v procesu</li>
+<li>Vstupy jsou ošetřené proti pádu programu</li>
+<li>Velikost pole se vytváří na základě výpočtu ze vstupu uživatele (vytvoří se přesně taková velikost jak je minimálně potřeba)</li>
+</ul>
+<h1><a class="anchor" id="variables"></a>
+Proměnné programu</h1>
+<ul>
+<li>int x - input uživatel čísla, které chce převést</li>
+<li>string pokracovat - slouží k uchování hodnoty, zda chce uživatel pokračovat v převodu</li>
+<li>bool ok slouží k ověření, že uživatel zadal validní vstup</li>
+<li>string soustava - slouží k uložení volby do jaké soustavy chce uživatel převést číslo</li>
+<li>double preVelikostBin/Osm/Hex - slouží k uložení výpočtu pro přesnou velikost pole</li>
+<li>int hodnotaBin/Osm/Hex - slouží k počítání v převodním algoritmu</li>
+<li>int Bin/Osm/HexVelikostPole - slouží k přetypování proměnné z double na int a zároveň funguje jako informace pro cyklus kdy má skončit</li>
+<li>pole charArrayBin/Osm/Hex - slouží k uložení samotného výsledku výpočtu</li>
+</ul>
+<h1><a class="anchor" id="methods"></a>
+Použité metody</h1>
+<ul>
+<li>Math.Log - slouží k vypočítání ideální velikost pole. Logaritmus o základu 2 sloužil k počítání binárního převodu. Základ 8 k osmičkovému převodu atp.</li>
+<li>Math.Floor - zaokrouhlení celého čísla směrem dolů, číslo se použilo pro vytvoření ideální velikosti pole.</li>
+<li>Array.Reverse - slouží k "přehození" celého pole. Jelikož je výsledek z počítání zapsán naopak, stejně jak když provádíme výpočet na papíře. </li>
+</ul>
+</div></div><!-- PageDoc -->
+</div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generováno programem &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.15
+</small></address>
+</body>
+</html>

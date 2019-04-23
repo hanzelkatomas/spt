@@ -1,0 +1,26 @@
+\hypertarget{index_main}{}\section{Popis programu}\label{index_main}
+Program má sloužit k převodu čísel v dekadickém formátu na čísla v dvojkové, osmičkové a šestnáckové soustavě
+\begin{DoxyItemize}
+\item Uživatel zadá číslo v dekadickém formátu
+\item Vybere danou soustavu, do které chce číslo převést
+\item V případě potřeby může pokračovat v procesu
+\item Vstupy jsou ošetřené proti pádu programu
+\item Velikost pole se vytváří na základě výpočtu ze vstupu uživatele (vytvoří se přesně taková velikost jak je minimálně potřeba)
+\end{DoxyItemize}\hypertarget{index_variables}{}\section{Proměnné programu}\label{index_variables}
+
+\begin{DoxyItemize}
+\item int x -\/ input uživatel čísla, které chce převést
+\item string pokracovat -\/ slouží k uchování hodnoty, zda chce uživatel pokračovat v převodu
+\item bool ok slouží k ověření, že uživatel zadal validní vstup
+\item string soustava -\/ slouží k uložení volby do jaké soustavy chce uživatel převést číslo
+\item double pre\+Velikost\+Bin/\+Osm/\+Hex -\/ slouží k uložení výpočtu pro přesnou velikost pole
+\item int hodnota\+Bin/\+Osm/\+Hex -\/ slouží k počítání v převodním algoritmu
+\item int Bin/\+Osm/\+Hex\+Velikost\+Pole -\/ slouží k přetypování proměnné z double na int a zároveň funguje jako informace pro cyklus kdy má skončit
+\item pole char\+Array\+Bin/\+Osm/\+Hex -\/ slouží k uložení samotného výsledku výpočtu
+\end{DoxyItemize}\hypertarget{index_methods}{}\section{Použité metody}\label{index_methods}
+
+\begin{DoxyItemize}
+\item Math.\+Log -\/ slouží k vypočítání ideální velikost pole. Logaritmus o základu 2 sloužil k počítání binárního převodu. Základ 8 k osmičkovému převodu atp.
+\item Math.\+Floor -\/ zaokrouhlení celého čísla směrem dolů, číslo se použilo pro vytvoření ideální velikosti pole.
+\item Array.\+Reverse -\/ slouží k \char`\"{}přehození\char`\"{} celého pole. Jelikož je výsledek z počítání zapsán naopak, stejně jak když provádíme výpočet na papíře. 
+\end{DoxyItemize}
